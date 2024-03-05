@@ -60,7 +60,7 @@
 
 STREAM_URL='https://azhpcstor.blob.core.windows.net/diagtool-binaries/stream.tgz'
 LSVMBUS_URL='https://raw.githubusercontent.com/torvalds/linux/master/tools/hv/lsvmbus'
-HPC_DIAG_URL='https://raw.githubusercontent.com/Azure/azhpc-diagnostics/main/Linux/src/gather_azhpc_vm_diagnostics.sh'
+HPC_DIAG_URL='https://raw.githubusercontent.com/EricZH3202/azhpc-diagnostics-upd/main/Linux/src/gather_azhpc_vm_diagnostics.sh'
 SCRIPT_DIR="$( cd "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
 SYSFS_PATH=/sys # store as a variable so it is mockable
 ETC_PATH=/etc
