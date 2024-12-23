@@ -912,6 +912,7 @@ function main {
 
     VM_SIZE=$(get_metadata compute/vmSize)
     VM_ID=$(get_metadata compute/vmId)
+    VM_RG=$(get_metadata compute/resourceGroupName)
 
     IMAGE_PUBLISHER=$(get_metadata compute/storageProfile/imageReference/publisher)
     IMAGE_OFFER=$(get_metadata compute/storageProfile/imageReference/offer)
@@ -933,6 +934,7 @@ function main {
     print_log "Virtual Machine Details:"
     print_log -e "\tID: $VM_ID"
     print_log -e "\tSize: $VM_SIZE"
+    print_log -e "\tRG: $VM_RG"
     if [ "$IMAGE_PUBLISHER" == 'Not found' ] ||
         [ "$IMAGE_OFFER" == 'Not found' ] ||
         [ "$IMAGE_SKU" == 'Not found' ] ||
